@@ -10,7 +10,7 @@ Summary(pl):	Text::Reform - rêczne wcinanie i przeformatowywanie tekstu
 Name:		perl-Text-Reform
 Version:	1.11
 Release:	1
-License:	Artistic  
+License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	18646b9fee3d2ddecdacde1d9210d83d
