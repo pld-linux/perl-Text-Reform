@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Text
-%define	pnam	Reform
+%define		pdir	Text
+%define		pnam	Reform
 Summary:	Text::Reform - manual text wrapping and reformating
 Summary(pl):	Text::Reform - rêczne wcinanie i przeformatowywanie tekstu
 Name:		perl-Text-Reform
