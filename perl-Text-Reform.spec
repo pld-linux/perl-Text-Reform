@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Text
 %define	pnam	Reform
-Summary:	Text::Autoformat perl module
-Summary(pl):	Modu³ perla Text::Autoformat
+Summary:	Text::Reform - manual text wrapping and reformating
+Summary(pl):	Text::Reform - rêczne wcinanie i przeformatowywanie tekstu
 Name:		perl-Text-Reform
 Version:	1.10
 Release:	1
@@ -19,22 +19,12 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Text::Autoformat provides intelligent formatting of plaintext without
-the need for any kind of embedded mark-up. The module recognizes
-Internet quoting conventions, a wide range of bulleting and number
-schemes, centred text, and block quotations, and reformats each
-appropriately. Other options allow the user to adjust inter-word and
-inter-paragraph spacing, justify text, and impose various
-capitalization schemes.
+The module supplies a re-entrant, highly configurable replacement for
+the built-in Perl format() mechanism.
 
 %description -l pl
-Text::Autoformat udostêpnia inteligentne formatowanie czystego tekstu
-bez potrzeby jamkichkolwiek znaczników. Modu³ rozpoznaje internetowe
-konwencje cytowania, szeroki zasób wyliczeñ i wiele schematów, tekst
-centrowany, cytaty blokowe - i ka¿dy z nich odpowiednio reformatuje.
-Inne opcje pozwalaj± u¿ytkownikowi regulowaæ odstêpy miêdzy s³owami
-i miêdzy akapitami, justowaæ tekst i stosowaæ ró¿ne schematy wielko¶ci
-liter.
+Modu³ udostêpnia umo¿liwiaj±cy zrównoleglanie, wysoce konfigurowalny
+mechanizm zastêpuj±cy wbudowany mechanizm format() Perla.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
