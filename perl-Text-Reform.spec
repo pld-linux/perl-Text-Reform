@@ -6,7 +6,7 @@
 %define		pdir	Text
 %define		pnam	Reform
 Summary:	Text::Reform - manual text wrapping and reformating
-Summary(pl):	Text::Reform - rêczne wcinanie i przeformatowywanie tekstu
+Summary(pl.UTF-8):   Text::Reform - rÄ™czne wcinanie i przeformatowywanie tekstu
 Name:		perl-Text-Reform
 Version:	1.11
 Release:	1
@@ -23,9 +23,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 The module supplies a re-entrant, highly configurable replacement for
 the built-in Perl format() mechanism.
 
-%description -l pl
-Modu³ udostêpnia umo¿liwiaj±cy zrównoleglanie, wysoce konfigurowalny
-mechanizm zastêpuj±cy wbudowany mechanizm format() Perla.
+%description -l pl.UTF-8
+ModuÅ‚ udostÄ™pnia umoÅ¼liwiajÄ…cy zrÃ³wnoleglanie, wysoce konfigurowalny
+mechanizm zastÄ™pujÄ…cy wbudowany mechanizm format() Perla.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
