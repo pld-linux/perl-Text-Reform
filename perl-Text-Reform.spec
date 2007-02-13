@@ -6,7 +6,7 @@
 %define		pdir	Text
 %define		pnam	Reform
 Summary:	Text::Reform - manual text wrapping and reformating
-Summary(pl.UTF-8):   Text::Reform - ręczne wcinanie i przeformatowywanie tekstu
+Summary(pl.UTF-8):	Text::Reform - ręczne wcinanie i przeformatowywanie tekstu
 Name:		perl-Text-Reform
 Version:	1.11
 Release:	1
