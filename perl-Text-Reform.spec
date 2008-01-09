@@ -12,8 +12,9 @@ Version:	1.11
 Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Text/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	18646b9fee3d2ddecdacde1d9210d83d
+URL:		http://search.cpan.org/dist/Text-Reform/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -44,8 +45,10 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
 install demo*.pl $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
-rm $RPM_BUILD_ROOT/%{perl_vendorlib}/Text/demo*.pl # shut up warning about unpackaged files
+# shut up warning about unpackaged files
+rm $RPM_BUILD_ROOT%{perl_vendorlib}/Text/demo*.pl
 
 %clean
 rm -rf $RPM_BUILD_ROOT
