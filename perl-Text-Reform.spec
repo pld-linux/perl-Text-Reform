@@ -45,6 +45,7 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 install demo*.pl $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+rm demo*.pl # shut up warning about unpackaged files
 
 %clean
 rm -rf $RPM_BUILD_ROOT
