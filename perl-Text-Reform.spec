@@ -9,7 +9,7 @@ Summary:	Text::Reform - manual text wrapping and reformating
 Summary(pl.UTF-8):	Text::Reform - ręczne wcinanie i przeformatowywanie tekstu
 Name:		perl-Text-Reform
 Version:	1.11
-Release:	1
+Release:	2
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Text/%{pdir}-%{pnam}-%{version}.tar.gz
