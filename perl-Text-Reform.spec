@@ -8,12 +8,12 @@
 Summary:	Text::Reform - manual text wrapping and reformating
 Summary(pl.UTF-8):	Text::Reform - ręczne wcinanie i przeformatowywanie tekstu
 Name:		perl-Text-Reform
-Version:	1.11
-Release:	2
+Version:	1.20
+Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Text/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	18646b9fee3d2ddecdacde1d9210d83d
+# Source0-md5:	f37f5834f3dc221eacd09bdfcfe40918
 URL:		http://search.cpan.org/dist/Text-Reform/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -46,10 +46,6 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install demo*.pl $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
-# shut up warning about unpackaged files
-rm $RPM_BUILD_ROOT%{perl_vendorlib}/Text/demo*.pl
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -58,5 +54,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes
 %{perl_vendorlib}/Text/Reform.pm
 %dir %{_examplesdir}/%{name}-%{version}
-%attr(755,root,root) %{_examplesdir}/%{name}-%{version}/*.pl
 %{_mandir}/man3/*
