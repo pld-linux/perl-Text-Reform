@@ -41,7 +41,6 @@ find -type f | xargs perl -pi -e 's,/usr/local,/usr,g'
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
@@ -53,5 +52,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes
 %{perl_vendorlib}/Text/Reform.pm
-%dir %{_examplesdir}/%{name}-%{version}
-%{_mandir}/man3/*
+%{_mandir}/man3/Text::Reform.3pm*
